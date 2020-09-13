@@ -1,0 +1,67 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: cornflowerblue;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  margin-right: -15%;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  border: 1px solid white;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  margin: 10%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li > a:hover {
+  cursor: pointer;
+  background: white;
+  color: cornflowerblue;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+.shopName {
+  padding: 1%;
+  margin-left: -35%;
+}
+
+@media (min-width: 880px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 880px) {
+  .shopName {
+    margin: 5px;
+    /* margin-left: -35%; */
+  }
+
+  ul {
+    margin-right: unest;
+  }
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
